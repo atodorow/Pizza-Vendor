@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:stripe="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreditCard">
+
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@drawable/cc"
+       android:orientation="vertical"
+       >
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/ccInfo"
+           android:layout_marginTop="40dp"
+           android:layout_marginLeft="40dp"
+           />
+
+
+
+       <com.stripe.android.view.CardInputWidget
+           android:id="@+id/card_input_widget"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="40dp"
+           stripe:cardTint="@android:color/holo_purple"
+           stripe:cardTextErrorColor="@android:color/holo_orange_dark"
+
+           />
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/CVC"
+               android:layout_marginLeft="40dp"
+               />
+
+           <EditText
+               android:layout_width="50dp"
+               android:id="@+id/cvc"
+               android:layout_height="wrap_content"
+               android:background="@drawable/textfiled_img"
+               android:layout_marginLeft="10dp"
+               />
+
+
+
+
+
+       </LinearLayout>
+
+       <Button
+           android:id="@+id/button4"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/greenmedium"
+           android:text="@string/submit"
+           android:onClick="submit"
+           android:textColor="#FFFFFF"
+           tools:layout_editor_absoluteX="117dp"
+           tools:layout_editor_absoluteY="384dp"
+           android:layout_marginLeft="150dp"
+           android:layout_marginTop="20dp"
+           />
+       </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

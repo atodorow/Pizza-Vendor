@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">PizzaVendor</string>
+    <string name="sandwhich">Sandwich</string>
+    <string name="pizza">Pizza</string>
+    <string name="dessert">Dessert</string>
+    <string name="sides">Sides</string>
+    <string name="beverages">Beverages</string>
+    <string name="pasta">pasta</string>
+    <string-array name="pizzaList">
+        <item>BBQ Chicken</item>
+        <item>Plain</item>
+        <item>Pepperoni</item>
+        <item>PineApple</item>
+        <item>MeatLover</item>
+        <item>White</item>
+        <item>Buffalo Chicken</item>
+    </string-array>
+
+    <string-array name="bevList">
+        <item>Coke</item>
+        <item>Diet Coke</item>
+        <item>Sprite</item>
+        <item>Dr. Pepper</item>
+        <item>Orange Soda</item>
+        <item>Ice Tea</item>
+        <item>Lemonade</item>
+    </string-array>
+    <string name="Checkout">Checkout</string>
+    <string name="Name">Name</string>
+    <string name="Address">Address</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="CreditCard">CreditCard</string>
+    <string name="Update">Update Info</string>
+    <string name="AddMore">Add more items</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="completeOrder">Complete Order</string>
+    <string name="placeOrder">Place Order</string>
+    <string name="about">About Page</string>
+    <string name="options">Options</string>
+    <string name="total">Your total</string>
+    <string name="OK">OK</string>
+    <string name="Sign">Sign In</string>
+    <string name="LogOut">Log Out</string>
+    <string name="home">Home</string>
+    <string name="web">Web</string>
+    <string name="welcome">Welcome to pie in the sky!</string>
+    <string name="info">Pizzeria Vetri is currently located at 958 County Line Rd. Order your favorite pizza, pasta, salad, and more, all with the click of a button.
+        Pizzeria Vetri orders online for pickup and delivery. </string>
+    <string name="ccInfo">Credit Card Info</string>
+    <string name="CVC">CVC Number</string>
+    <string name= "submit">Submit</string>
+
+</resources>

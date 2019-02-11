@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About">
+
+
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Toolbar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tool"
+            >
+
+
+        </Toolbar>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imagePizza"
+            android:layout_centerHorizontal="true"
+            android:background="#FFFFFF"
+            android:gravity="center_horizontal"
+            android:text="Welcome to Pizzeria Vetri!"
+            android:textStyle="normal|bold"
+            android:textSize="20dp"
+            />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/redborder"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imagePizza"
+                    android:layout_marginTop="80dp"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:gravity="center_horizontal"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/redborder"
+                    android:src="@drawable/pizzarella"
+                    />
+
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imagePizza"
+                    android:text="@string/info"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="198dp"
+                    android:layout_height="61dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/facebook"
+                    android:onClick="onClickFacebook"
+                    android:textColor="#FFFFFF"
+
+
+                    />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="198dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/greenmedium"
+                    android:text="Email us"
+                    android:onClick="onClickEmail"
+                    android:textColor="#FFFFFF"
+                    android:layout_below="@+id/button"
+                    />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="198dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/redpizza"
+                    android:textColor="#FFFFFF"
+                    android:strokeColor="#FFff0000"
+                    android:strokeWidth="5"
+                    android:text="Get Directions"
+                    android:onClick= "onClickAddress"
+                    android:layout_below="@+id/button2"
+
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </ScrollView>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

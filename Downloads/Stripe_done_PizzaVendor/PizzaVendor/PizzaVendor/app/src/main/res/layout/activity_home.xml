@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    tools:showIn= "@layout/activity_home">
+
+
+
+    <LinearLayout
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ilovepizza"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:srcCompat="@drawable/pizza"
+            android:layout_alignParentTop="true" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="View Menu"
+            android:background="@drawable/grey"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="onClickMenu"
+
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grey"
+            android:text="Customer Info"
+            android:layout_below="@+id/button"
+            android:onClick="onClickCustomer"
+            />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grey"
+
+
+
+            android:strokeWidth="5"
+            android:text="Pizza news"
+            android:onClick="onClickAbout"
+            android:layout_below="@+id/button2"
+
+            />
+
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

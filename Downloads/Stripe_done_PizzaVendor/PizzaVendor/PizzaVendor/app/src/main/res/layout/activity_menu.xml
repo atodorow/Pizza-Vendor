@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu"
+    tools:showIn="@layout/activity_menu">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp">
+
+                <ImageView
+                    android:id="@+id/imageSandwhich"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:contentDescription="@string/sandwhich"
+                    android:src="@drawable/sandwhiches"
+                    tools:layout_editor_absoluteX="80dp"
+                    tools:layout_editor_absoluteY="176dp" />
+
+                <TextView
+                    android:id="@+id/textSandwhich"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/sandwhich"
+                    android:textStyle="normal|bold|italic"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="163dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp"
+
+                >
+
+
+                <ImageView
+                    android:id="@+id/imagePizza2"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:contentDescription="@string/pizza"
+                    android:onClick="onClickPizza"
+                    android:src="@drawable/pizza2"
+                    tools:layout_editor_absoluteX="80dp"
+                    tools:layout_editor_absoluteY="176dp" />
+
+                <TextView
+                    android:id="@+id/textPizza2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/pizza"
+                    android:textStyle="normal|bold|italic"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="163dp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <ImageView
+                    android:id="@+id/imageBeverages"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="start"
+                    android:contentDescription="@string/beverages"
+                    android:onClick="onClickBev"
+                    android:src="@drawable/cocacola"
+                    tools:layout_editor_absoluteX="80dp"
+                    tools:layout_editor_absoluteY="176dp" />
+
+                <TextView
+                    android:id="@+id/textBev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/beverages"
+                    android:textStyle="normal|bold|italic" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <ImageView
+                    android:id="@+id/imageSides"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="start"
+                    android:contentDescription="@string/sides"
+                    android:src="@drawable/sides"
+                    tools:layout_editor_absoluteX="80dp"
+                    tools:layout_editor_absoluteY="176dp" />
+
+                <TextView
+                    android:id="@+id/textSides"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/sides"
+                    android:textStyle="normal|bold|italic" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <ImageView
+                    android:id="@+id/imageDessert"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="start"
+                    android:contentDescription="@string/dessert"
+                    android:src="@drawable/chocolate"
+                    tools:layout_editor_absoluteX="80dp"
+                    tools:layout_editor_absoluteY="176dp" />
+                <!--android:onClick=""-->
+
+                <TextView
+                    android:id="@+id/textDessert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/dessert"
+                    android:textStyle="normal|bold|italic" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

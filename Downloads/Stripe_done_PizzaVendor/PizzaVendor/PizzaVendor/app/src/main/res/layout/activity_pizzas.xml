@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pizzas">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+
+
+            <ListView
+                android:id="@+id/pizzaOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp">
+
+
+            </ListView>
+
+
+
+
+
+        <RadioButton
+            android:id="@+id/small"
+            android:layout_below = "@+id/pizzaOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Small"
+            android:onClick="onClickSmall"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="412dp" />
+
+        <RadioButton
+            android:id="@+id/medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/small"
+            android:layout_below="@id/pizzaOptions"
+            android:text="Medium"
+            android:onClick="onClickMedium"
+            tools:layout_editor_absoluteX="138dp"
+            tools:layout_editor_absoluteY="412dp" />
+
+        <RadioButton
+            android:id="@+id/large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/medium"
+            android:layout_below="@id/pizzaOptions"
+            android:text="Large"
+            android:onClick="onClickLarge"
+            tools:layout_editor_absoluteX="259dp"
+            tools:layout_editor_absoluteY="412dp" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/medium"
+            android:layout_toRightOf="@+id/small"
+            android:text="Next"
+            android:onClick="onClickNext"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="447dp" />
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
